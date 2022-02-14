@@ -19,11 +19,3 @@ if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
 } else {
   sapply(pacotes, require, character = T) 
 }
-
-
-# Indicação da aula: O pacote rayshader que está no CRAN, no momento, possui 
-# alguns bugs. A versão que está no GitHub do autor do pacote já é mais 
-# funcional.
-devtools::install_github('tylermorganwall/rayshader')
-
-library(rayshader)
